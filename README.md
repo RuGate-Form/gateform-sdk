@@ -147,9 +147,9 @@ $client = new Client(new Config($siteKey, $secretKey, $baseUrl), new FakeTranspo
 
 ## Связанные пакеты
 
-- [gateform/yii2](https://packagist.org/packages/gateform/yii2) — компонент, валидатор, виджеты и фильтр для Yii2
-- [gateform/yii3](https://packagist.org/packages/gateform/yii3) — виджеты, валидатор и PSR-15 middleware для Yii3
-- [gateform/laravel](https://packagist.org/packages/gateform/laravel) — правило валидации, middleware и Blade-компоненты
+- [gateform/yii2](https://github.com/RuGate-Form/gateform-yii2) — компонент, валидатор, виджеты и фильтр для Yii2
+- [gateform/yii3](https://github.com/RuGate-Form/gateform-yii3) — виджеты, валидатор и PSR-15 middleware для Yii3
+- [gateform/laravel](https://github.com/RuGate-Form/gateform-laravel) — правило валидации, middleware и Blade-компоненты
 - [WordPress-плагин GateForm](https://gateform.ru/docs) — капча, Contact Form 7 и виджеты
 
 ## Лицензия
