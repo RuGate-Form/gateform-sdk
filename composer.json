@@ -1,0 +1,57 @@
+{
+    "name": "gateform/sdk",
+    "description": "PHP SDK для серверной проверки токенов GateForm: капча и защита форм от спама и ботов.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "gateform",
+        "captcha",
+        "spam",
+        "form-protection",
+        "verification"
+    ],
+    "homepage": "https://gateform.ru",
+    "authors": [
+        {
+            "name": "GateForm",
+            "homepage": "https://gateform.ru"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/RuGate-Form/gateform-sdk/issues",
+        "source": "https://github.com/RuGate-Form/gateform-sdk"
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*"
+    },
+    "suggest": {
+        "ext-curl": "Рекомендуется: используется для HTTP-запросов, если доступен"
+    },
+    "replace": {
+        "gateform/php-sdk": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "GateForm\\": "src/"
+        }
+    },
+    "scripts": {
+        "lint": "php tests/lint.php",
+        "test": "php tests/smoke.php",
+        "check": [
+            "@lint",
+            "@test"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

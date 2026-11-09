@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форма с GateForm</title>
+</head>
+<body>
+  <!--
+    data-gateform — маркер формы.
+    client.js сам добавит скрытое поле gf_token и заполнит его перед отправкой.
+    Замените адрес и site_key на свои.
+  -->
+  <form action="/validate.php" method="post" data-gateform>
+    <label>
+      Email
+      <input type="email" name="email" required>
+    </label>
+    <label>
+      Сообщение
+      <textarea name="message" required></textarea>
+    </label>
+    <button type="submit">Отправить</button>
+  </form>
+
+  <script src="https://gateform.ru/client.js"
+          data-site-key="gf_site_..."
+          data-form="form[data-gateform]"
+          defer></script>
+</body>
+</html>
